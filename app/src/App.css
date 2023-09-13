@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.logindiv{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background:linear-gradient(rgb(11, 11, 223),rgb(221, 10, 221));
+}
 
 .App-logo {
   height: 40vmin;
