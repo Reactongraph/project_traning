@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  background:linear-gradient(rgb(11, 11, 223),rgb(221, 10, 221));
+  background-image:url("/home/ongraph/Desktop/practice/app/src/components/images/vecteezy_fingerprint-identity-sensor-data-protection-system-podium_7164537.jpg");
+  background-size: cover;
 }
 
 .App-logo {

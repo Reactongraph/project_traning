@@ -8,9 +8,12 @@
     margin-top: 100px;
     justify-content: center;
     width:300px;
-    height:350px;
+    height:400px;
     border-radius:10px;
     box-shadow: 5px 5px 10px;
+}
+.mainheight{
+    height:320px
 }
 .main h1{
     color: blue;
@@ -25,31 +28,37 @@
     justify-content: center;
     margin-bottom:20px;
 
+
     }
 
 .signin{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color:white;
     background-color: blue;
-    border-radius:10px;
-    width:100px;
+    width:250px;
     height:30px;
     cursor: pointer;
+    border: none;
 
     
 }
 .login{
-    background-color: white;
-    color: black; background-color:aliceblue;
-    border-radius:10px;
-    width:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:lightgrey;
+    color: black; 
+    width:250px;
     height:30px;
     cursor: pointer;
+    border:none
 
    
 }
-.logmar{
-    margin-left:50px;
-   
+.buttonmargin{
+    margin-bottom: 10px;
 }
 .inputdivs input{
     border: none;

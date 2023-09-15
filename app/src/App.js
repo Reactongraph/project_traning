@@ -8,7 +8,6 @@ import Login from './components/login-signup/Login';
    
       return (
         <div className='logindiv'>
-
           <Login/>
         </div>
       );
