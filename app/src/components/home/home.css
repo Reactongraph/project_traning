@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+.main-div{
+    display:flex
+}
+.upper-div{
+    /* display:flex; */
+    /* justify-content: center; */
+    width: 1000px;
+    height: 300px;
+    margin-left: 35px;
+    border: solid 1px black;
+    background:linear-gradient(rgb(55, 55, 235),rgb(207, 74, 207));
+    border:none;
+    border-radius:10px;
+
+}
+.upper-div h1{
+    color:whitesmoke;
+    margin-top:10px;
+    font-family: 'Mooli', sans-serif;
+}
+.upper-div-heading{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+    border:solid 1px,black
+    
+}
+.upper-div-heading input{
+    border:none;
+    outline:none;
+    height:40px;
+    width:400px;
+    /* margin-top:30px; */
+    
+}
+.search-logo{
+    background-color:white;
+    height:42px;
+}
+.input-div{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.sub-menu-main{
+    display:flex;
+    justify-content: center;
+    margin-top:80px;
+    gap:30px
+
+}
+.sub-menu
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+height: 50px;
+width:100px;
+border:none;
+border-radius:5px;
+cursor:pointer
+}
+.sub-menu:hover{
+  width:105px;
+  height:55px
+}
