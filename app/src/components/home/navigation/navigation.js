@@ -9,6 +9,24 @@ import { AiOutlineRight } from 'react-icons/ai';
 
 function Navbar() {
     const [info, setInfo] = useState(false)
+    const popupref=useRef(null)
+    useEffect(()=>{
+        function handleClickOutside(event) {
+           
+            if (
+              popupref.current &&
+              !popupref.current.contains(event.target) 
+              
+            ) {
+                setInfo(false)
+            }
+          }
+          document.addEventListener("mousedown", handleClickOutside);
+          return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+          };
+        
+    },[popupref,info])
    
     return (
 
@@ -23,9 +41,9 @@ function Navbar() {
                     <li><button>Contact</button></li>
                 </ul>
                 <button className="logoutbutton">Log Out</button>
-                <button className="infobutton" onClick={() => setInfo(!info)}>A</button>
+                <button  ref={popupref} className="infobutton" onClick={() => setInfo(true)}>A</button>
             </nav>
-            {info && <div className="showinfo" >
+            {info && <div className="showinfo" ref={popupref} >
                 <h3 className="infoheader"> Aakash Verma</h3>
                 <p className="loginfo">aakashvermartk@gmail.com</p>
                 <div className="showinfobuttons"><FiSettings /><span>Settings</span><AiOutlineRight className="arrows" /></div>

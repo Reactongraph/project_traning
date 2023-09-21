@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Mooli&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+}
+.bdy{
+
+    height:100vh;
+    width: 100%;
+    background-image:url("/home/ongraph/Desktop/practice/app/src/components/images/birthday.jpg");
+     background-size: cover;  
+     background-position: center;
+     /* overflow: hidden; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.bdy h1{
+    color:brown;
+    font-size:5rem;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Mooli', sans-serif;
+    @media screen  and (max-width:600px){
+        font-size: 2rem;        
+    }
+    
+}
+.paragraph{
+    display: flex;
+     /* flex-direction: column; */
+     justify-content: center;
+     color:rgb(255, 255, 161);
+    width:400px;
+    margin-top:20px;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Mooli', sans-serif;
+    @media screen and (max-width:600px) {
+        font-size:10px;
+    } 
+        
+    
+}
+.bdy h6{
+    margin-top:20px;
+    font-size:3rem;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Mooli', sans-serif; 
+    color:goldenrod;
+    @media screen and (max-width: 600px) {
+        font-size:1rem;
+      }
+    
+}
+.bdy h3,span{
+    color:whitesmoke
+}
+
