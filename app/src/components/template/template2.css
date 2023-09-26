@@ -21,6 +21,11 @@
 .img1,.img2 {
     width:200px;
     height:200px;
+    @media screen and (max-width:320px) {
+        width:100px;
+        height:100px
+        
+    }
 }
 .img1 img,.img2 img{
     width:100%;
@@ -40,11 +45,17 @@
 .bdy1 p{
     font-family: 'Fuggles', cursive;
     font-size:xx-large;
-    color:goldenrod
+    color:goldenrod;
+    @media screen and (max-width:320px) {
+        font-size:large;
+    }
 }
 .bdy1 h1{
     font-family: 'Croissant One', cursive; @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     color:goldenrod;
+    @media screen and (max-width:320px) {
+        font-size:small;
+    }
 }
 .h5{
     font-family: 'Pacifico', cursive;
@@ -53,4 +64,11 @@
  .bdy1 h6{
     font-family: 'Montserrat Alternates', sans-serif;
     color:goldenrod
+}
+.sub-div2 span{
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(255, 245, 240);
+    text-decoration: none;
+
 }

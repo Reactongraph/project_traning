@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0
+}
+.bdy3{
+ width: 100%;
+ height:100vh;
+ background-image: url("/home/ongraph/Desktop/practice/app/src/components/images/ganesh.jpg");
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ @media screen and (max-width:320px) {
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+}
+.sub-div1{
+    width:36rem;
+    height: 20rem;
+    background-color: peachpuff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    border:none;
+    border-radius:5px;
+    @media screen  and (max-width:320px) {
+        width:10rem;
+        height:7rem;
+
+    }
+}
+.sub-div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-div1 h1{
+    color:rgb(112, 101, 99);;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    font-size: xxx-large;
+    @media screen and (max-width:320px){
+        font-size: smaller;
+    }    
+}
+.sub-div2 span{
+    @media screen and (max-width:320px) {
+         font-size:xx-small;
+    }
+}
