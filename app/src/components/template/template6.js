@@ -16,7 +16,7 @@ const Template6=()=>{
        <div className='corner-img img-bottom-right'>
           <img src={corner_img} alt="image not found"/>
        </div>
-       <span>Happy Birthday to you</span>
+      <div className='span-div'> <span className='span'>Happy Birthday to you</span></div>
       </div>
     )
 }
