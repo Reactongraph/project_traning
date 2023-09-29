@@ -5,7 +5,7 @@ import img2 from '../images/temp9.2.webp'
 import img3 from '../images/temp9.3.webp'
 const Template9 = () => {
    return (
-      <div className='bdy'>
+      <div className='bdy9'>
          <div className='img top-left'>
             <img src={img1} alt='image not found' />
          </div>

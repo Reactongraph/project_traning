@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Template9 from './components/template/template9';
+//import Template9 from './components/template/template9';
+// import Invitation from './components/tempdata/invitation';
+import Home from './components/home/home';
+
 
 //import Login from './components/login-signup/Login';
 
@@ -11,8 +14,9 @@ import Template9 from './components/template/template9';
         // <div className='logindiv'>
         //   <Login/>
         // </div>
-        //<Home/>
-        <Template9/>
+        <Home/>
+        // <Invitation/>
+             
       
       
       );

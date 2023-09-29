@@ -1,23 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 .main-div{
-    display:flex
+    display:flex;
+    
 }
 .upper-div{
     /* display:flex; */
     /* justify-content: center; */
-    width: 1000px;
+    width: 950px;
     height: 300px;
     margin-left: 35px;
     border: solid 1px black;
     background:linear-gradient(rgb(55, 55, 235),rgb(207, 74, 207));
     border:none;
     border-radius:10px;
+    @media screen and (max-width:900px) {
+        width:600px;
+        height:250px
+    }
+    @media screen and (max-width:600px) {
+     width:400px;
+     height:200px  
+    }
 
 }
 .upper-div h1{
     color:whitesmoke;
     margin-top:10px;
     font-family: 'Mooli', sans-serif;
+    @media screen and (max-width:900px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width:600px)
+    {
+        font-size:20px;
+    }
 }
 .upper-div-heading{
     display:flex;
@@ -25,20 +41,35 @@
     justify-content: center;
     align-items: center;
     height:150px;
-    border:solid 1px,black
+    @media screen and (max-width:900px) {
+        height:100px
+    }
     
 }
-.upper-div-heading input{
+.input-div input{
     border:none;
     outline:none;
     height:40px;
     width:400px;
     /* margin-top:30px; */
-    
+    @media screen and (max-width:900px) {
+        width:350px;
+        height:30px
+    }
+    @media screen and (max-width:600px) {
+        width:300px;
+        height:25px
+    }
 }
 .search-logo{
     background-color:white;
     height:40px;
+    @media screen and (max-width:900px) {
+        height:30px
+    }
+    @media screen and (max-width:600px) {
+        height:25px
+    }
 }
 .input-div{
     display:flex;
@@ -49,7 +80,13 @@
     display:flex;
     justify-content: center;
     margin-top:80px;
-    gap:30px
+    gap:30px;
+    @media screen and (max-width:900px) {
+        margin-top:70px;
+    }
+    @media screen and (max-width:600px) {
+        margin-top:30px;
+    }
 
 }
 .sub-menu
@@ -63,9 +100,36 @@ height: 50px;
 width:100px;
 border:none;
 border-radius:5px;
-cursor:pointer
+cursor:pointer;
+@media screen and (max-width:600px) {
+    height:30px;
+    width:70px
+}
+}
+.sub-menu h6{
+    @media screen and (max-width:600px) {
+        font-size:7px;
+    }
 }
 .sub-menu:hover{
   width:105px;
   height:55px
+}
+.template-maindiv{
+    /* height:200px; */
+    /* background-color:lightgrey; */
+    margin-left:36px;
+   
+}
+.content-div{ 
+     display: flex;
+    flex-direction: column;
+     gap:20px;
+     margin-left:350px ;
+     @media screen and (max-width:900px) {
+        margin-left:200px
+     }
+     @media screen and (max-width:600px) {
+         margin-left:155px;
+     }
 }

@@ -3,7 +3,7 @@ import './template8.css'
 import img from '../images/temp8.webp'
 const Template8=()=>{
    return(
-    <div className="bdy">
+    <div className="bdy8">
       <div className="img">
          <img src={img} alt="image not found"/>
       </div>

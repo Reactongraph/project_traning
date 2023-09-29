@@ -30,7 +30,7 @@ function Navbar() {
    
     return (
 
-        <div className="div">
+        <div className="main">
             <img src={logimg} height="30px" widht="30px" alt="image not found" />
             <nav className="nav">
 
