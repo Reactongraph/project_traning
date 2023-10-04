@@ -8,11 +8,20 @@ import { MdInsertInvitation } from 'react-icons/md';
 import { PiCards } from 'react-icons/pi';
 import { LiaAddressCardSolid } from 'react-icons/lia';
 import Invitation from "../tempdata/invitation"
+import Modal from "../Modal/modal"
+
 const Home = () => {
   const [value, SetVAlue] = useState("");
   const [cardValue, setCardValue] = useState("");
+  const [show, setShow] = useState(false)
+  const[showtemp,setShowTemp]=useState("")
   const handleValue = (e) => {
     SetVAlue(e.target.value)
+  }
+  function handlemodal() {
+    return (
+      <Modal  setShow={setShow} showtemp={showtemp} />
+    )
   }
   //console.log(value)
   function handletemplate() {
@@ -20,19 +29,19 @@ const Home = () => {
       case "invite":
         {
           return (
-            <Invitation cardValue={cardValue} />
+            <Invitation cardValue={cardValue} setShowTemp={setShowTemp}  setShow={setShow}/>
           )
         }
       case "cards":
         {
           return (
-            <Invitation cardValue={cardValue} />
+            <Invitation cardValue={cardValue} setShowTemp={setShowTemp} setShow={setShow} />
           )
         }
       case "postcards":
         {
           return (
-            <><Invitation cardValue={cardValue} /><Invitation cardValue={cardValue} /><Invitation cardValue={cardValue} /></>
+            <Invitation cardValue={cardValue}  setShowTemp={setShowTemp} setShow={setShow}/>
           )
         }
 
@@ -48,7 +57,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="main-div">
-          <Sidebar />
+        <Sidebar />
         <div className="content-div">
           <div className="upper-div">
             <div className="upper-div-heading">
@@ -63,11 +72,11 @@ const Home = () => {
                 <MdInsertInvitation />
                 <h6>Invitations</h6>
               </div>
-              <div className="sub-menu" onClick={()=>setCardValue("cards")}>
+              <div className="sub-menu" onClick={() => setCardValue("cards")}>
                 <PiCards />
                 <h6 >Cards</h6>
               </div>
-              <div className="sub-menu" onClick={()=>setCardValue("postcards")}>
+              <div className="sub-menu" onClick={() => setCardValue("postcards")}>
                 <LiaAddressCardSolid />
                 <h6 >Postman Cards</h6>
               </div>
@@ -75,10 +84,12 @@ const Home = () => {
           </div>
           <div className="template-maindiv">
             {handletemplate()}
+            {/* <button onClick={() => { setShow(true) }}>clcik me</button> */}
+            
           </div>
         </div>
       </div>
-
+      {show === true ? handlemodal() : ''}
     </>
   )
 }

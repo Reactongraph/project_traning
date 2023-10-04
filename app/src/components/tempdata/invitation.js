@@ -11,21 +11,26 @@ import template8 from '../images/template8.png'
 import template9 from '../images/template9.png'
 
 
-const Invitation = ({ cardValue }) => {
+const Invitation = ({ cardValue, setShow, setShowTemp }) => {
     return (
         <div className="template-div">
             <div className="template">
-                <img src={cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7} alt="image not found" />
+                <img src={cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7} alt="image not found" onClick={() => {
+                    setShow(true)
+                    setShowTemp(cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7)
+                }} />
             </div>
             <div className="template">
-                <img src={cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8} alt="image not found" />
+                <img src={cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8} alt="image not found" onClick={() => {setShow(true) 
+                setShowTemp(cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8)}} />
             </div>
             <div className="template">
-                <img src={cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9} alt="image not found" />
+                <img src={cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9} alt="image not found" onClick={() => {setShow(true)
+                setShowTemp(cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9)}} />
             </div>
 
         </div>
     )
 }
 
-export default Invitation
+export default Invitation;

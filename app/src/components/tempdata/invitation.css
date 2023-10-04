@@ -8,10 +8,10 @@
         gap:20px
     }
 }
-.template img:hover
+/* .template img:hover
 {
     border:solid 1px  grey;
-}
+} */
 .template{
      width:200px;
      height:200px;
