@@ -9,18 +9,25 @@ import { PiCards } from 'react-icons/pi';
 import { LiaAddressCardSolid } from 'react-icons/lia';
 import Invitation from "../tempdata/invitation"
 import Modal from "../Modal/modal"
+import Allinvitaion from "../tempdata/allinvitaion"
 
 const Home = () => {
   const [value, SetVAlue] = useState("");
   const [cardValue, setCardValue] = useState("");
   const [show, setShow] = useState(false)
-  const[showtemp,setShowTemp]=useState("")
+  const[showtemp,setShowTemp]=useState({ 
+    template:"",
+    id:null
+  })
   const handleValue = (e) => {
     SetVAlue(e.target.value)
   }
   function handlemodal() {
     return (
       <Modal  setShow={setShow} showtemp={showtemp} />
+      //<Modal>
+          // ChildComponent
+      // </Modal>
     )
   }
   //console.log(value)
@@ -44,6 +51,10 @@ const Home = () => {
             <Invitation cardValue={cardValue}  setShowTemp={setShowTemp} setShow={setShow}/>
           )
         }
+      case "showall":
+        {
+          return <Allinvitaion setShowTemp={setShowTemp} setShow={setShow}/>
+        }
 
       default:
         {
@@ -57,7 +68,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="main-div">
-        <Sidebar />
+        <Sidebar  setCardValue={setCardValue}/>
         <div className="content-div">
           <div className="upper-div">
             <div className="upper-div-heading">

@@ -111,14 +111,16 @@ cursor:pointer;
         font-size:7px;
     }
 }
-.sub-menu:hover{
+/* .sub-menu:hover{
   width:105px;
   height:55px
-}
+} */
 .template-maindiv{
     /* height:200px; */
     /* background-color:lightgrey; */
     margin-left:36px;
+    display:flex;
+    justify-content: center;
    
 }
 .content-div{ 

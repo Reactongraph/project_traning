@@ -1,5 +1,5 @@
 import React from "react";
-import './invitation.css'
+import './invitation.css';
 import template1 from '../images/template1.png'
 import template2 from '../images/template2.png'
 import template3 from '../images/template3.png'
@@ -10,25 +10,32 @@ import template7 from '../images/template7.png'
 import template8 from '../images/template8.png'
 import template9 from '../images/template9.png'
 
+// import imgData from "./imgData";
+  
 
 const Invitation = ({ cardValue, setShow, setShowTemp }) => {
     return (
         <div className="template-div">
+            <div className="template-sub-div">
             <div className="template">
                 <img src={cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7} alt="image not found" onClick={() => {
                     setShow(true)
-                    setShowTemp(cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7)
+                    setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
+                    id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})
                 }} />
             </div>
             <div className="template">
-                <img src={cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8} alt="image not found" onClick={() => {setShow(true) 
-                setShowTemp(cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8)}} />
+                <img src={cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8} alt="image not found" onClick={() => {
+                    setShow(true) 
+                    setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
+                    id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})}} />
             </div>
             <div className="template">
                 <img src={cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9} alt="image not found" onClick={() => {setShow(true)
-                setShowTemp(cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9)}} />
+                setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
+                id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})}} />
             </div>
-
+         </div>
         </div>
     )
 }

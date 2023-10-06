@@ -31,9 +31,9 @@ function Navbar() {
     return (
 
         <div className="main">
-            <img src={logimg} height="30px" widht="30px" alt="image not found" />
+            
             <nav className="nav">
-
+            <img src={logimg} height="30px" widht="30px" alt="image not found" />
                 <ul className="ul">
                     <li><button>Home</button></li>
                     <li><button>Services</button></li>
