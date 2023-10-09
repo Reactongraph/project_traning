@@ -10,6 +10,8 @@ import { LiaAddressCardSolid } from 'react-icons/lia';
 import Invitation from "../tempdata/invitation"
 import Modal from "../Modal/modal"
 import Allinvitaion from "../tempdata/allinvitaion"
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+
 
 const Home = () => {
   const [value, SetVAlue] = useState("");
@@ -66,6 +68,7 @@ const Home = () => {
 
   return (
     <>
+    
       <Navbar />
       <div className="main-div">
         <Sidebar  setCardValue={setCardValue}/>
@@ -95,7 +98,7 @@ const Home = () => {
           </div>
           <div className="template-maindiv">
             {handletemplate()}
-            {/* <button onClick={() => { setShow(true) }}>clcik me</button> */}
+            
             
           </div>
         </div>

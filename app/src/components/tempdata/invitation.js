@@ -21,19 +21,19 @@ const Invitation = ({ cardValue, setShow, setShowTemp }) => {
                 <img src={cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7} alt="image not found" onClick={() => {
                     setShow(true)
                     setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
-                    id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})
+                    id:cardValue === "invite" ? 1 : cardValue === "cards" ? 4 : 7})
                 }} />
             </div>
             <div className="template">
                 <img src={cardValue === "invite" ? template2 : cardValue === "cards" ? template5 : template8} alt="image not found" onClick={() => {
                     setShow(true) 
                     setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
-                    id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})}} />
+                    id:cardValue === "invite" ? 2 : cardValue === "cards" ? 5 : 8})}} />
             </div>
             <div className="template">
                 <img src={cardValue === "invite" ? template3 : cardValue === "cards" ? template6 : template9} alt="image not found" onClick={() => {setShow(true)
                 setShowTemp({template:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7,
-                id:cardValue === "invite" ? template1 : cardValue === "cards" ? template4 : template7})}} />
+                id:cardValue === "invite" ? 3 : cardValue === "cards" ? 6 : 9})}} />
             </div>
          </div>
         </div>

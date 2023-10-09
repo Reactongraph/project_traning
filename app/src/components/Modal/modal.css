@@ -122,3 +122,12 @@
     width:100%;
     height:100vh;
 }
+.template-show-div{
+    width: 600px;
+    border:solid 1px black
+}
+.modal-content-template{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
