@@ -7,10 +7,11 @@
 
 }
 .bdy{
-    height:100vh;
+    height:100%;
     width: 100%;
     background-image:url("/home/ongraph/Desktop/practice/app/src/components/images/birthday.jpg");
-     background-size: cover;  
+     /* background-size: contain;   */
+     background-repeat: no-repeat;
      background-position: center;
      /* overflow: hidden; */
      display: flex;
@@ -20,7 +21,7 @@
 }
 .bdy h1{
     color:brown;
-    font-size:5rem;
+    font-size:2rem;
     font-family: 'Croissant One', cursive;
     font-family: 'Mooli', sans-serif;
     @media screen  and (max-width:600px){
@@ -33,30 +34,32 @@
      /* flex-direction: column; */
      justify-content: center;
      color:rgb(255, 255, 161);
-    width:400px;
-    margin-top:20px;
+     font-size:7px;
+    width:150px;
+    margin-top:15px;
     font-family: 'Croissant One', cursive;
     font-family: 'Fuggles', cursive;
     font-family: 'Mooli', sans-serif;
-    @media screen and (max-width:600px) {
+    /* @media screen and (max-width:600px) {
         font-size:10px;
-    } 
+    }  */
         
     
 }
 .bdy h6{
     margin-top:20px;
-    font-size:3rem;
+    font-size:1rem;
     font-family: 'Croissant One', cursive;
     font-family: 'Fuggles', cursive;
     font-family: 'Mooli', sans-serif; 
     color:goldenrod;
-    @media screen and (max-width: 600px) {
+    /* @media screen and (max-width: 600px) {
         font-size:1rem;
-      }
+      } */
     
 }
 .bdy h3,span{
-    color:whitesmoke
+    color:whitesmoke;
+    font-size: small;
 }
 

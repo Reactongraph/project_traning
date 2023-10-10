@@ -47,10 +47,12 @@ const Modal = ({ setShow, showtemp }) => {
             {modalInfo==false?<div className="modal-content modal-content-template">
 
              <span className="close" onClick={() => setModalInfo(true)}>&times;</span>
-              <div className="template-show-div"> {showtemp.id==1?<Template1/>:showtemp.id==2?<Template2/>
+             <div className="edit-main-div"> <div className="template-show-div"> {showtemp.id==1?<Template1/>:showtemp.id==2?<Template2/>
                 :showtemp.id==3?<Template3/>:showtemp.id==4?<Template4/>:showtemp.id==5?<Template5/>
                 :showtemp.id==6?<Template6/>:showtemp.id==7?<Template7/>:showtemp.id==8?<Template8/>
                 :showtemp.id==9?<Template9/>:null} </div>
+                   <button className="edit-temp-btn">Click to edit</button>
+                   </div>
                  </div>:null}
             
             </div>

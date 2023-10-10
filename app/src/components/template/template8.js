@@ -4,12 +4,12 @@ import img from '../images/temp8.webp'
 const Template8=()=>{
    return(
     <div className="bdy8">
-      <div className="img">
+      <div className="img8">
          <img src={img} alt="image not found"/>
       </div>
       <div className="content">
-      <span className="heading">Thank you</span>
-      <p className="sub-heading">For you order</p>
+      <span className="heading-content">Thank you</span>
+      <p className="sub-heading8">For you order</p>
       </div>
     </div>
    )

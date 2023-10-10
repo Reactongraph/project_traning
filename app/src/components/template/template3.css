@@ -11,36 +11,47 @@
   justify-content: center;
   gap:25px;
   width:100%;
-  height:100vh;
+  height:100%;
   background-image: url("/home/ongraph/Desktop/practice/app/src/components/images/paint.jpg");
   background-size: cover;
   background-position: center;
 }
 .bdy2 h1{
-    font-size: 12rem;
+    font-size: 4rem;
     font-family: 'Fuggles', cursive;
-    @media screen and (max-width:650px) {
-      font-size:5rem;   
-    }
+    
 }
-.sub-div1{
+
+/* @media screen and (max-width:600px) {
+    .bdy2 h1{
+        font-size: 8rem;        
+    }   
+  } */
+.sub-div2{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
-.sub-div1 span{
+.sub-div2 span{
     color:black;
     font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    @media  screen and (max-width:650px) {
-        font-size:small ;
-    }
+    font-size: x-small;
+  
 }
-.sub-div2 p{
-    font-size:larger;
-    @media screen and (max-width:650px) {
-        font-size: smaller;
-    }
+/* @media  screen and (max-width:600px) {
+    .sub-div2 span{
+        font-size:large ;
+    } */
+    
+/* } */
+.sub-div2-1 p{
+    font-size:smaller;
+    
 }
+/* @media screen and (max-width:600px) {
+    .sub-div2-1 p{
+    font-size: medium;
+    }
+} */

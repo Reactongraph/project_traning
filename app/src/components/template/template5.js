@@ -4,10 +4,10 @@ import './template5.css'
  const Template5=()=>{
     return(
         <div className="bdy5">
-            <div className="background-img">
+            <div className="background-img5">
                 <img src={picture} alt="img not found"/>
             </div>
-            <div className="heading">
+            <div className="heading5">
             <span>Thank You</span>
             </div>
         </div>

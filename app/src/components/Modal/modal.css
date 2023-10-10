@@ -123,11 +123,21 @@
     height:100vh;
 }
 .template-show-div{
-    width: 600px;
-    border:solid 1px black
+    width: 300px;
+    height:357px;
+    border:solid 1px black;
+    margin-left:70px;
 }
 .modal-content-template{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+   
+   /* justify-content:center; */
+  /*align-items: center; */
+}
+.edit-temp-btn{
+    width:200px;
+    height:30px;
+}
+.edit-main-div{
+    display: flex;
+    gap:200px;
 }

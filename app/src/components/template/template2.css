@@ -9,24 +9,36 @@
     margin:0;
 }
 .bdy1{
-    width:100%;
-    height:100vh;
-    background-color:rgb(248, 248, 227);
-    display:flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 248, 227);
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:50px;
+    gap: 12px;
     align-items: center;
+    position: relative;
 }
 .img1,.img2 {
-    width:200px;
-    height:200px;
-    @media screen and (max-width:320px) {
-        width:100px;
-        height:100px
-        
-    }
+    width:150px;
+    height:150px;
+   
 }
+/* @media screen and (max-width:600px) {
+    .img1,.img2{
+    width:100px;
+    height:100px
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .img1,.img2{
+    width:100px;
+    height:100px
+    }
+    
+} */
 .img1 img,.img2 img{
     width:100%;
     height:100%;
@@ -44,22 +56,41 @@
 }
 .bdy1 p{
     font-family: 'Fuggles', cursive;
-    font-size:xx-large;
+    /* font-size:xx-large; */
     color:goldenrod;
-    @media screen and (max-width:320px) {
-        font-size:large;
+   
+}
+/* @media screen and (max-width:600px) {
+    .bdy p{
+    font-size:large;
     }
 }
+@media screen and (max-width:320px) {
+    .bdy p{
+    font-size:large;
+    }
+} */
 .bdy1 h1{
+    font-size: 14px;
     font-family: 'Croissant One', cursive; @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     color:goldenrod;
-    @media screen and (max-width:320px) {
-        font-size:small;
-    }
+   
 }
+/* @media screen and (max-width:600px) {
+    .bdy1 h1{
+    font-size:xx-small;
+    }
+} */
+/* @media screen and (max-width:320px) {
+    .bdy1 h1{
+    font-size:small;
+    }
+} */
 .h5{
     font-family: 'Pacifico', cursive;
-    color:goldenrod
+    color:goldenrod;
+    font-size: 10px;
+    font-size: 8px;
 }
  .bdy1 h6{
     font-family: 'Montserrat Alternates', sans-serif;

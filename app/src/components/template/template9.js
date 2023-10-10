@@ -6,25 +6,25 @@ import img3 from '../images/temp9.3.webp'
 const Template9 = () => {
    return (
       <div className='bdy9'>
-         <div className='img top-left'>
+         <div className='img9 top-left'>
             <img src={img1} alt='image not found' />
          </div>
-         <div className='img top-right'>
+         <div className='img9 top-right'>
             <img src={img1} alt='image not find' />
          </div>
          
-         <div className='img bottom-left'>
+         <div className='img9 bottom-left'>
             <img src={img2} alt='image is not found' />
          </div>
-         <div className='img bottom-right'>
+         <div className='img9 bottom-right'>
             <img src={img2} alt='image not found' />
          </div>
-         <div className='center-img'>
+         <div className='center-img9'>
             <img src={img3} alt='image not found' />
          </div>
-         <div className='main-headingdiv'>
-         <span className='heading'>Congratulations</span>
-         <p className='sub-heading'>Congratulations on your well-deserved graduation! Your hard work has paid off, and I'm so proud of you</p>
+         <div className='main-headingdiv9'>
+         <span className='heading9'>Congratulations</span>
+         <p className='sub-heading9'>Congratulations on your well-deserved graduation! Your hard work has paid off, and I'm so proud of you</p>
          </div>
       </div>
    )
