@@ -1,7 +1,12 @@
 import react from 'react'
 import './template6.css'
 import corner_img from '../images/temp6.webp'
-const Template6=()=>{
+import { useState } from 'react'
+const Template6=({edit})=>{
+  const[message,setMessage]=useState("Happy Birthday to you")
+  const handleChange=(e)=>{
+       setMessage(e.target.value)
+  }
     return(
       <div className='bdy6'>
        <div className='corner-img img-left'>
@@ -16,7 +21,8 @@ const Template6=()=>{
        <div className='corner-img img-bottom-right'>
           <img src={corner_img} alt="image not found"/>
        </div>
-      <div className='span-div'> <span className='span'>Happy Birthday to you</span></div>
+      <div className='span-div'> <span className='span'>{edit ?
+                <input type="text" name="message" value={message} onChange={handleChange} /> : message}</span></div>
       </div>
     )
 }

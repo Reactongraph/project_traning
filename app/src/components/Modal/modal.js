@@ -18,6 +18,7 @@ import Template9 from "../template/template9";
 const Modal = ({ setShow, showtemp }) => {
     // console.log('id='+showtemp.id)
     const [modalInfo, setModalInfo] = useState(true)
+    const[edit,setEdit]=useState(false)
     function handleEdit(){
         setModalInfo(false)
     }
@@ -47,11 +48,14 @@ const Modal = ({ setShow, showtemp }) => {
             {modalInfo==false?<div className="modal-content modal-content-template">
 
              <span className="close" onClick={() => setModalInfo(true)}>&times;</span>
-             <div className="edit-main-div"> <div className="template-show-div"> {showtemp.id==1?<Template1/>:showtemp.id==2?<Template2/>
-                :showtemp.id==3?<Template3/>:showtemp.id==4?<Template4/>:showtemp.id==5?<Template5/>
-                :showtemp.id==6?<Template6/>:showtemp.id==7?<Template7/>:showtemp.id==8?<Template8/>
-                :showtemp.id==9?<Template9/>:null} </div>
-                   <button className="edit-temp-btn">Click to edit</button>
+             <div className="edit-main-div"> <div className="template-show-div"> {showtemp.id==1?<Template1 edit={edit}/>:showtemp.id==2?<Template2  edit={edit} />
+                :showtemp.id==3?<Template3 edit={edit} />:showtemp.id==4?<Template4 edit={edit} />:showtemp.id==5?<Template5 edit={edit} />
+                :showtemp.id==6?<Template6 edit={edit} />:showtemp.id==7?<Template7 edit={edit} />:showtemp.id==8?<Template8 edit={edit} />
+                :showtemp.id==9?<Template9 edit={edit} />:null} </div>
+                <div className="btn-main-div">
+                   <button className="edit-temp-btn" onClick={()=>setEdit(!edit)}>{edit?"Save":"Click to edit"}</button>
+                   <button className="Download-btn">Download In PDF </button>
+                   </div>
                    </div>
                  </div>:null}
             

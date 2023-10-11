@@ -3,7 +3,16 @@ import './template9.css'
 import img1 from '../images/temp9.1.webp'
 import img2 from '../images/temp9.2.webp'
 import img3 from '../images/temp9.3.webp'
-const Template9 = () => {
+import { useState } from 'react'
+const Template9 = ({edit}) => {
+   const[content,setContent]=useState({
+      Message1:"Congratulations",
+      Message2:"Congratulations on your well-deserved graduation! Your hard work has paid off, and I'm so proud of you"
+   })
+   const handleChange=(e)=>{
+     const {name,value}=e.target
+     
+   }
    return (
       <div className='bdy9'>
          <div className='img9 top-left'>
@@ -23,8 +32,10 @@ const Template9 = () => {
             <img src={img3} alt='image not found' />
          </div>
          <div className='main-headingdiv9'>
-         <span className='heading9'>Congratulations</span>
-         <p className='sub-heading9'>Congratulations on your well-deserved graduation! Your hard work has paid off, and I'm so proud of you</p>
+         <span className='heading9'>{edit ?
+                <input type="text" name="Message1" value={content.Message1} onChange={handleChange} /> : content.Message1}</span>
+         <p className='sub-heading9'>{edit ?
+                <input type="text" name="Message2" value={content.Message2} onChange={handleChange} /> : content.Message2}</p>
          </div>
       </div>
    )

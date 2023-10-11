@@ -134,10 +134,31 @@
   /*align-items: center; */
 }
 .edit-temp-btn{
-    width:200px;
-    height:30px;
+    width: 225px;
+    height: 53px;
+    background-color: slateblue;
+    border: none;
+    cursor: pointer;
+    color:white;
+    font-size: x-large;
 }
 .edit-main-div{
     display: flex;
-    gap:200px;
+    /* justify-content: center; */
+    align-items: center;
+    gap:250px
+}
+.btn-main-div{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.Download-btn{
+    width: 225px;
+    height: 53px;
+    background-color: slateblue;
+    border: none;
+    cursor: pointer;
+    color:white;
+    font-size: x-large;
 }
