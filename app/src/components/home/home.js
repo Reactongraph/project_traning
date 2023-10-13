@@ -14,6 +14,7 @@ import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 
 
 const Home = () => {
+  const [showSide,setShowSide]=useState(true)
   const [value, SetVAlue] = useState("");
   const [cardValue, setCardValue] = useState("");
   const [show, setShow] = useState(false)
@@ -69,9 +70,9 @@ const Home = () => {
   return (
     <>
     
-      <Navbar />
+      <Navbar  showSlide={showSide} setShowSide={setShowSide} /> 
       <div className="main-div">
-        <Sidebar  setCardValue={setCardValue}/>
+        {showSide?<Sidebar  setCardValue={setCardValue}/>:null}
         <div className="content-div">
           <div className="upper-div">
             <div className="upper-div-heading">
