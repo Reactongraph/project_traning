@@ -6,19 +6,19 @@
 .upper-div{
     /* display:flex; */
     /* justify-content: center; */
-    width: 950px;
+    /* width: 950px; */
     height: 300px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
     border: solid 1px black;
     background:linear-gradient(rgb(55, 55, 235),rgb(207, 74, 207));
     border:none;
     border-radius:10px;
     @media screen and (max-width:900px) {
-        width:600px;
+        /* width:600px; */
         height:250px
     }
     @media screen and (max-width:600px) {
-     width:400px;
+     /* width:400px; */
      height:200px  
     }
 
@@ -79,7 +79,7 @@
 .sub-menu-main{
     display:flex;
     justify-content: center;
-    margin-top:80px;
+    margin-top:60px;
     gap:30px;
     @media screen and (max-width:900px) {
         margin-top:70px;
@@ -118,7 +118,7 @@ cursor:pointer;
 .template-maindiv{
     /* height:200px; */
     /* background-color:lightgrey; */
-    margin-left:36px;
+    /* margin-left:36px; */
     display:flex;
     justify-content: center;
    
@@ -127,11 +127,17 @@ cursor:pointer;
      display: flex;
     flex-direction: column;
      gap:20px;
-     margin-left:350px ;
+     /* margin-left:350px ; */
+     width:100%;
+     padding: 24px 32px 0 16px;
      @media screen and (max-width:900px) {
-        margin-left:200px
+        /* margin-left:200px */
+        margin-left: 0px;
      }
      @media screen and (max-width:600px) {
-         margin-left:155px;
+         /* margin-left:155px; */
      }
 }
+/* .extend-content{
+    width:calc(100%-350px)
+} */

@@ -2,13 +2,17 @@
     border:none;
     /* height:85vh; */
     width:350px;
-    position:fixed;
-    top:15vh;
+    position:sticky;
+    top:62px;
     left:0;
     height:100%;
     background-color: white;
     @media screen and (max-width:900px) {
-        width:200px
+        /* width:200px; */
+        display: none;
+        z-index:2                                                               
+        ;
+
         
     }
     @media screen and (max-width:600px) {

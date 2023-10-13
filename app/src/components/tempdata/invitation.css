@@ -14,7 +14,7 @@
     border:solid 1px  grey;
 } */
 .template{
-     width:200px;
+     /* width:200px; */
      height:200px;
      @media  screen and (max-width:900px) {
         width:150px;
@@ -35,7 +35,7 @@
 .template-sub-div{
     display:flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 5%;
     @media screen and (max-width:900px) {
         gap:30px ;
     }
