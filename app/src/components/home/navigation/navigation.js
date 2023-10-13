@@ -7,7 +7,7 @@ import { BiHelpCircle } from 'react-icons/bi';
 import { AiOutlineGift } from 'react-icons/ai';
 import { AiOutlineRight } from 'react-icons/ai';
 
-function Navbar() {
+function Navbar({showSlide,setShowSide}) {
     const [info, setInfo] = useState(false)
     const popupref=useRef(null)
     useEffect(()=>{
@@ -30,18 +30,22 @@ function Navbar() {
    
     return (
 
-        <div className="main">
+          <div className="main">
             
             <nav className="nav">
-            <img src={logimg} height="30px" widht="30px" alt="image not found" />
+                <div className="left-div">
+            <img src={logimg} onClick={()=>setShowSide(!showSlide)} height="30px" widht="40px" alt="image not found" />
                 <ul className="ul">
-                    <li><button>Home</button></li>
-                    <li><button>Services</button></li>
-                    <li><button>About</button></li>
-                    <li><button>Contact</button></li>
+                    <li><button className="nav-button">Home</button></li>
+                    <li><button className="nav-button">Services</button></li>
+                    <li><button className="nav-button">About</button></li>
+                    <li><button className="nav-button">Contact</button></li>
                 </ul>
+                </div>
+                <div className="right-div">
                 <button className="logoutbutton">Log Out</button>
                 <button  ref={popupref} className="infobutton" onClick={() => setInfo(true)}>A</button>
+                </div>
             </nav>
             {info && <div className="showinfo" ref={popupref} >
                 <h3 className="infoheader"> Aakash Verma</h3>
@@ -51,8 +55,8 @@ function Navbar() {
                 <div className="showinfobuttons"><AiOutlineMail /><span>Refer friend</span><AiOutlineRight className="arrows" /></div>
                 <div className="showinfobuttons"><BiHelpCircle /><span>Help</span><AiOutlineRight className="arrows" /></div>
             </div>}
-        </div>
-
+   
+          </div>
 
     )
 }
